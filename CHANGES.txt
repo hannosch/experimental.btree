@@ -4,6 +4,8 @@ Changelog
 1.2 - unreleased
 ----------------
 
+- Update to Cython 0.16.
+  [hannosch]
 
 1.1 - 2011-08-21
 ----------------

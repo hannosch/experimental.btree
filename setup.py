@@ -7,16 +7,16 @@ base = join('experimental', 'btree')
 
 codeoptimization = Feature("Optional code optimizations",
     standard=True,
-      ext_modules=[
+    ext_modules=[
         Extension(
-          name='experimental.btree.difference',
-          sources=[join(base, 'difference.c')]
+            name='experimental.btree.difference',
+            sources=[join(base, 'difference.c')]
         ),
         Extension(
-          name='experimental.btree.intersection',
-          sources=[join(base, 'intersection.c')],
+            name='experimental.btree.intersection',
+            sources=[join(base, 'intersection.c')],
         ),
-      ],
+    ],
 )
 
 setup(name='experimental.btree',
@@ -25,21 +25,21 @@ setup(name='experimental.btree',
       long_description=open("README.rst").read() + "\n" +
                        open("CHANGES.txt").read(),
       classifiers=[
-        "Framework :: Plone",
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 2.6",
-        "Programming Language :: Python :: 2.7",
-        ],
+          "Framework :: Plone",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2.6",
+          "Programming Language :: Python :: 2.7",
+      ],
       keywords='plone zodb btree',
-      author='Jarn AS',
-      author_email='info@jarn.com',
-      url='http://www.jarn.com/',
-      license='GPL',
+      author='Hanno Schlichting',
+      author_email='hanno@hannosch.eu',
+      url='http://pypi.python.org/pypi/experimental.btree',
+      license='BSD',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['experimental'],
       include_package_data=True,
       zip_safe=False,
-      features = {'codeoptimization': codeoptimization},
+      features={'codeoptimization': codeoptimization},
       install_requires=[
           'setuptools',
           'Products.ExtendedPathIndex',
