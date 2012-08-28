@@ -44,6 +44,7 @@ setup(name='experimental.btree',
           'setuptools',
           'Products.ExtendedPathIndex',
           'Products.ZCatalog',
+          'Zope2',
           'ZODB3',
       ],
       entry_points="""
